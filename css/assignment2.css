@@ -1,0 +1,463 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+  border-radius: 75px;
+}
+
+body {
+  border: 1px solid rgba(222, 217, 217, 0.964);
+}
+section > .container {
+  width: 1200px;
+  margin: auto;
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  /* padding: 30px 50px; */
+  line-height: 1.4;
+}
+
+/* tao baner anh */
+/* xac ding vi tri anh */
+#banner {
+  position: relative;
+  text-align: center;
+  color: #f7f7f7;
+}
+
+.text-banner {
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  font-size: 20px;
+}
+/* tao kieu thanh bar top */
+/* tao flex box */
+
+#nav-bar .container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+  position: relative;
+}
+
+#nav-bar .container a {
+  text-decoration: none;
+}
+
+.id1,
+.id2,
+.id5 {
+  border-left: 1px solid rgba(222, 217, 217, 0.964);
+  vertical-align: text-top;
+  padding-bottom: 30px;
+}
+
+.id2 {
+  padding-right: 150px;
+  padding-left: 50px;
+}
+
+.id4 {
+  padding-left: 170px;
+  padding-right: 50px;
+}
+
+.id1 {
+  padding: 0 50px;
+}
+
+.id5 {
+  padding: 0 50px;
+}
+.id1,
+.id2,
+.id4,
+.id5 {
+  padding-top: 30px;
+  text-transform: none;
+}
+
+/* phan bo xung tao anh ca nhan */
+.id3-img {
+  width: 130px;
+  height: 130px;
+  top: -43px;
+  right: 46.8%;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 0 7px rgb(233 230 230);
+  overflow: hidden;
+}
+/* phan thong tin ca nhan */
+/* tao grid */
+#about .container {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 16px;
+  font-weight: lighter;
+  font-variant: normal;
+}
+
+#target {
+  margin: 65px 0;
+  padding-left: 188px;
+}
+
+h2 {
+  padding-bottom: 15px;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+#personal-info {
+  margin: 65px 0;
+  padding-left: 160px;
+}
+
+#personal-info h2 {
+  padding-left: 35px;
+  padding-bottom: 15px;
+}
+
+#personal-info ul {
+  list-style: none;
+}
+
+/* tao icon  */
+.multiicon {
+  padding-top: 25px;
+  padding-left: 40px;
+  color: #6060f0;
+}
+
+/* phan thong tin nghe nghiep */
+/* tao grid */
+#job-info .container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
+  gap: 30px;
+  /* border: 1px solid grey; */
+}
+.icon-job {
+  display: flex;
+  gap: 70px;
+  padding-top: 60px;
+  padding-left: 20px;
+}
+/* phan kinh nghiem lam viec tao kieu */
+
+#job-info .content-kn {
+  border: 1px solid grey;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.point-color ul li {
+  list-style: none;
+  position: relative;
+  padding-top: 60px;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.point-color ul li::before {
+  content: "";
+  position: absolute;
+  top: 72px;
+  left: -20px;
+  width: 12px;
+  height: 12px;
+  background: #199cdb;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px grey;
+}
+/* cach khac tao border bang phan tu gia */
+/* #job-info .time-kn::before {
+  content: "Hiện tại";
+  font-size: 18px;
+  text-align: center;
+  color: #f7f7f7;
+  position: absolute;
+  border-radius: 12px;
+  height: 31px;
+  width: 80px;
+  background: #199cdb;
+} */
+#job-info .time-kn {
+  background-color: #199cdb;
+  border-radius: 15px;
+  color: #f7f7f7;
+  padding: 7px 10px;
+}
+/* phan ky nang */
+#job-info .content-skills {
+  border: 1px solid grey;
+  padding: 20px;
+}
+#job-info .mutilskills {
+  padding-top: 60px;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+/* tao thanh bang span */
+#job-info .bolt1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+#job-info .bolt2 {
+  background: rgb(233, 230, 230);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* phan ngon ngu */
+
+#job-info .content-lang {
+  border: 1px solid grey;
+  padding: 20px;
+}
+#job-info .multilang {
+  padding-top: 60px;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* phan hoat dong */
+#job-info .active-hd {
+  border: 1px solid grey;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+/* phan hoc van */
+#job-info .edu-hv {
+  border: 1px solid grey;
+  padding: 20px;
+  background-color: #7de3dc;
+}
+/* phan so thich */
+#job-info .hobby-sth {
+  border: 1px solid grey;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+#job-info .content-hobby-sth {
+  padding-top: 60px;
+  padding-left: 7px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+#job-info .icon-hobby-sth {
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.icon-hobby-sth1,
+.icon-hobby-sth2,
+.icon-hobby-sth3,
+.icon-hobby-sth4 {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #199cdb;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#job-info .text-hobby-sth {
+  display: flex;
+  gap: 13px;
+  padding-top: 10px;
+}
+
+/* phan chung chi giai thuong */
+#certificate .multicertificate {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(70px, 1fr));
+  justify-content: center;
+}
+
+#certificate .section-title {
+  padding: 15px 0;
+  font-size: 30px;
+}
+.certificate1,
+.certificate2,
+.certificate3 {
+  display: flex;
+  gap: 20px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 35px 0px;
+}
+.certificate1,
+.certificate2 {
+  border-bottom: 1px solid #d6c08d;
+  position: relative;
+}
+
+.certificate2 .img-certificate2::before {
+  content: "";
+  position: absolute;
+  height: 149px;
+  width: 1px;
+  left: -3.6%;
+  background-color: #d6c08d;
+}
+
+.content-certificate1,
+.content-certificate2,
+.content-certificate3,
+p:first-child {
+  padding-bottom: 10px;
+}
+
+/* phan du an */
+#project .mutiplan {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(60px, 1fr));
+  gap: 20px;
+}
+
+#project .plan-title {
+  font-size: 18px;
+  font-family: sans-serif;
+  vertical-align: middle;
+  padding: 10px 15px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+#project .content-plan th {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+  font-size: 18px;
+  width: 24%;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+#project .content-plan td {
+  vertical-align: top;
+  text-align: left;
+  font-size: 18px;
+  width: 38%;
+  padding-top: 15px;
+}
+
+#project .icon-plan {
+  display: flex;
+  position: relative;
+  gap: 30px;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: 18px;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+/* tao border bang phan tu gia */
+/* #project .time-bg::before {
+  content: "2021";
+  font-size: 16px;
+  text-align: center;
+  color: #f7f7f7;
+  position: absolute;
+  height: 26px;
+  width: 56px;
+  background-color: #199cdb;
+  border-radius: 60px;
+} */
+/* tao border cho nen */
+#project .time-bg {
+  background-color: #199cdb;
+  border-radius: 20px;
+  padding: 7px 14px;
+  color: #f7f7f7;
+}
+table,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+/* Phan lien he */
+
+#footer {
+  margin-top: 30px;
+  padding-left: 100px;
+}
+
+#footer .renraku {
+  display: grid;
+  grid-template-columns: repeat(6, 80px);
+  padding: 30px 50px;
+  justify-items: center;
+}
+/* tao border ngoai icon */
+#footer .icon-renraku3 {
+  background: #f7f7f7;
+  color: #199cdb;
+  border-radius: 100%;
+  height: 35px;
+  width: 40px;
+  font-size: 40px;
+}
+/* tao border ngoai icon */
+#footer .icon-renraku {
+  background: #199cdb;
+  color: #f7f7f7;
+  border-radius: 100%;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 6px;
+}
+
+#footer .renraku a {
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+a:link {
+  color: #199cdb;
+}
+a:visited {
+  color: #383897;
+}
+a:hover {
+  color: rgb(212, 62, 49);
+  padding: 5px;
+  background-color: yellowgreen;
+  border-radius: 25px;
+  font-style: italic;
+  font-weight: bold;
+  cursor: pointer;
+}
+a:active {
+  color: aqua;
+}
